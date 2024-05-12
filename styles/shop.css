@@ -5,10 +5,26 @@
     margin: 0;
     scroll-behavior: smooth;
     text-decoration: none;
+    list-style: none;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 70px;
+}
+.logo{
+    max-width: 220px;
+}
+.prod{
+    font-size: 34px;
+    cursor: pointer;
 }
 .shaving, .manscare{
+    padding: 20px 40px;
     padding-top: 50px;
     display: grid;
+    gap: 20px;
     grid-template-columns: repeat(2,1fr);
 }
 .title{
@@ -23,6 +39,7 @@
 #shave, #mansCare{
     position: sticky;
     top: 0;
+    box-shadow: 1px 9px 21px -8px rgba(0,0,0,0.76);
 }
 #mansCare{
     z-index: 1;
@@ -49,12 +66,39 @@
 .Slide a:hover{
     color: rgb(16, 136, 96);
 }
+.contact{
+    cursor: pointer;
+    font-size: 34px
+}
+.contactList{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(31, 30, 30);
+    overflow: hidden;
+    height: 0px;
+    transition: all ease-out .4s;
+}
+.contactList li{
+    padding: 10px 20px;
+    transition: all 4s;
+    color: aquamarine;
+    border: 1px solid rgba(8, 8, 8, 0.616);
+}
 header{
     background-color: rgb(31, 23, 23);
-    color: rgb(80, 138, 138);
+    color: aquamarine;
     font-family: "Kanit", sans-serif;
 }
 .images{
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 550px;
+    max-height: 300px;
+}
+#Box{
+    overflow: hidden;
+    border: 1.5px #000 solid;
+    border-radius: 5px;
+    max-width: 550px;
+    max-height: 600px;
 }

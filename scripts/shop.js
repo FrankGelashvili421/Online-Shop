@@ -1,19 +1,56 @@
-let product = document.querySelector('.product')
-let sliding = document.querySelector('.Slide')
-let contact = document.querySelector('.contact')
-let contactlist = document.querySelector('.contactList')
 
-product.addEventListener('mouseenter', ()=>{
-    sliding.style.height = sliding.scrollHeight + 'px';
-})
-product.addEventListener('mouseleave', ()=>{
-    sliding.style.height = '0px';
-})
+let shavingItems = [{
+    item:'Shave Brush',
+    new:true,
+    price: '15$',
+},
+{
+    item:'Shave Blade',
+    new:true,
+    price: '36$',
+},
+{
+    item:'Electric Razor', //Panasonic Arc5 LV9 
+    new:true,
+    price: '250$',
+},
+{
+    item:'Shave Razor',
+    new:true,
+    price: '5$',
+},
+];
 
-contact.addEventListener('mouseenter', ()=>{
-    contactlist.style.height = contactlist.scrollHeight + 'px';
-})
-
-contact.addEventListener('mouseleave', ()=>{
-    contactlist.style.height = '0px';
-});
+let MansCare = [{
+    item:'facewash',
+    price:'15$'
+},
+{
+    item:'hairbalm',
+    price:'45$'
+},
+{
+    item:'shampoo',
+    price:'15$'
+},
+{
+    item:'Beardbalm',
+    price:'20$'
+},
+{
+    item:'shavegel',
+    price:'15$'
+},
+{
+    item:'shave cream',
+    price:'24$'
+},
+{
+    item:'shave foam',
+    price:'10$'
+},
+{
+    item:'hair wax',
+    price:'35$'
+},
+];

@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    text-decoration: none;
 }
 .shaving, .manscare{
     padding-top: 50px;
@@ -18,6 +19,40 @@
     font-family: "Kanit", sans-serif;
     background-color: black;
     color: aquamarine;
+}
+#shave, #mansCare{
+    position: sticky;
+    top: 0;
+}
+#mansCare{
+    z-index: 1;
+}
+.Slide{
+    z-index: 1;
+    display: flex;
+    background-color: rgb(31, 30, 30);
+    flex-direction: column;
+    position: absolute;
+    overflow: hidden;
+    height: 0px;
+    transition: all ease-out .4s;
+}
+.Slide li{
+    padding: 10px 20px;
+    transition: all .4s;
+    border: 1px solid rgb(8, 8, 8);
+}
+.Slide a{
+    color: aquamarine;
+    transition: all .4s;
+}
+.Slide a:hover{
+    color: rgb(16, 136, 96);
+}
+header{
+    background-color: rgb(31, 23, 23);
+    color: rgb(80, 138, 138);
+    font-family: "Kanit", sans-serif;
 }
 .images{
     max-width: 500px;

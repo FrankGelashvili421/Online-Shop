@@ -163,7 +163,13 @@
 @media only screen and (max-width: 1040px){
     .leftSide{
         display: none;
-        visibility: hidden;
+    }
+    .section1{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:auto;
+        grid-template-areas: 
+        " main";
     }
     .background{
         z-index: -1;
@@ -177,12 +183,4 @@
         justify-content: center;
         align-items: center;
     }
-    /* .logo2{
-        left: 57%;
-        top: 32%;
-    }
-    .Logo2L{
-        left: 54%;
-        top: 67%;
-    } */
 }

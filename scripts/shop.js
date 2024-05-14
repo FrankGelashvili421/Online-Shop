@@ -74,9 +74,9 @@ let card = (shaveitem) => {
         let cardContainer = document.createElement('div');
         cardContainer.className = 'cardCont';
         cardContainer.innerHTML = `
-            <div class="img"><img class="images" src="${element.image}"></div>
-            <div class="mainCont">
-                <div class="shaveitems">
+            <div class="container">
+                <img class="images" src="${element.image}">
+                <div class="items">
                     <div class="btnCont">
                         <div class="items">${element.item}</div>
                         <div class="prices">${element.price}</div>
@@ -99,16 +99,16 @@ let cards = (MansCare) =>{
       let cardcont = document.createElement('div');
       cardcont.className = 'carecont';
       cardcont.innerHTML = `
-      <div class="img2"><img class="images" src="${element.image}"></div>
-            <div class="container">
-                <div class="CareItem">
-                    <div class="btnCont">
-                        <div class="items">${element.item}</div>
-                        <div class="prices">${element.price}</div>
-                        <button class="buybtn">buy</button>
-                    </div>
+        <div class="container">
+            <img class="images" src="${element.image}">
+            <div class="items">
+                <div class="btnCont">
+                    <div class="items">${element.item}</div>
+                    <div class="prices">${element.price}</div>
+                    <button class="buybtn">buy</button>
                 </div>
             </div>
+        </div>
       `;
       mensCareCard.appendChild(cardcont);
     });

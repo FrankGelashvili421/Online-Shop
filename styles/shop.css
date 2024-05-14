@@ -20,13 +20,6 @@ header{
     font-size: 34px;
     cursor: pointer;
 }
-.shaving, .manscare{
-    padding: 20px 40px;
-    padding-top: 50px;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(2,1fr);
-}
 .title{
     padding: 10px 30px;
     display: flex;
@@ -91,17 +84,67 @@ header{
     color: aquamarine;
     font-family: "Kanit", sans-serif;
 }
-.images{
-    max-width: 550px;
-    max-height: 300px;
+.shaving , .manscare{
+    margin: 200px;
+    padding-bottom: 160px;
+    display: grid;
+    gap: 400px;
+    grid-template-columns: repeat(2,1fr);
 }
-#Box{
+.images{
+    height: 400px;
+    width: 268px;
+    border-radius: 10px;
+    border-top-right-radius: 11px;
     overflow: hidden;
-    border: 1.5px #000 solid;
-    border-radius: 5px;
-    max-width: 550px;
-    max-height: 600px;
+    z-index: -1;
+}
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-height: 400px;
+    max-width: 270px;    
+    background-color: rgba(185, 181, 181, 0.596);
+    border: 1px solid rgba(10, 6, 6, 0.35);    
+    border-radius: 10px;
+}
+.items{
+    display: flex;
+    align-items: center;
+    padding: 3px 20px;
+    font-size: 20px;
+    font-family: "Kanit", sans-serif;
+}
+.btnCont{
+    font-size: 20px;
+    font-family: "Kanit", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Kanit", sans-serif;
+    padding: 5px 20px;
+    gap: 10px;
+}
+.buybtn{
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 70px;
+    background-color: rgb(31, 23, 23);
+    color: aquamarine;
+    font-size: 22px;
+    font-family: "Kanit", sans-serif;
 }
 @media only screen and (max-width:1300px) {
-    
+   
 }

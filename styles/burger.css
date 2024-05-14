@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 .burgercont{
     display: none;
 }
@@ -15,39 +16,29 @@
     background-color: rgb(255, 255, 255);
 }
 .burgerItems{
+    font-family: "Kanit", sans-serif;
     z-index: 1;
     display: flex;
-    background-color: rgb(36, 196, 142);
+    background-color: rgb(31 23 23);
     flex-direction: column;
     position: absolute;
-    top: 38%;
-    left: 99%;
     overflow: hidden;
     height: 0px;
     transition: all ease-out .4s;
-    font-size: 40px;
+    font-size: 20px;
+    border-radius: 10px;
     & li{
         padding: 10px 20px;
         transition: all .4s;
         border: 1px solid rgb(8, 8, 8);
+        border-radius: 10px;
     }
     & a{
-        color: #000;
+        color: rgb(255, 255, 255);
         transition: all .4s;
     }
-    & a:hover{
-        color: rgb(2, 73, 73);
-    }
 }
-.line.active:before{
-    transform: rotate(45deg) translateY(6px) translateX(7px);
-}
-.line.active:after{
-    transform: rotate(-45deg) translateY(-6px) translateX(7px);
-}
-.line.active{
-    opacity: 0;
-}
+
 @media (min-width: 0px) and (max-width:768px) {
     .burgercont{
         display: block;

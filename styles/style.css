@@ -9,6 +9,10 @@
     padding: 0;
     text-decoration: none;
 }
+.burgercont{
+    padding: 24px;
+    margin: 20px;
+}
 .rightSide h1{
     font-family: Shave;
 }
@@ -161,26 +165,28 @@
 }
 
 @media only screen and (max-width: 1040px){
-    .leftSide{
-        display: none;
-    }
-    .section1{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows:auto;
-        grid-template-areas: 
-        " main";
-    }
-    .background{
-        z-index: -1;
-        object-fit: cover;
-        position: fixed;
-        height: 100vh;
-    }
     .logo2, .logo2L{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+}
+@media only screen and (max-width: 780px){
+    .leftSide{
+        display: none;
+    }
+.section1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:auto;
+    grid-template-areas: 
+    " main";
+}
+.background{
+    z-index: -1;
+    object-fit: cover;
+    position: fixed;
+    height: 100vh;
+}
 }

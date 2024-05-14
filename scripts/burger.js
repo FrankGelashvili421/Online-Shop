@@ -3,11 +3,11 @@ let burger = document.querySelector('.burger');
 let burgerItems = document.querySelector('.burgerItems');
 
 burger.addEventListener('click', ()=>{
-    if(burgercont.classList.contains('active')){
+    if(burgercont.classList.contains('open')){
         burgerItems.style.height = '0px'
-        burgercont.classList.remove('active')
+        burgercont.classList.remove('open')
         }else{
         burgerItems.style.height = burgerItems.scrollHeight + 'px';
-        burgercont.classList.add('active')
+        burgercont.classList.add('open')
     }
 })

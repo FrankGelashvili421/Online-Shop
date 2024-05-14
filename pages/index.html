@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/shop.css">
+    <link rel="stylesheet" href="../styles/burger.css">
     <link rel="icon" href="../images/icon.png">
     <title>frank's Chop Shop</title>
 </head>
 <body>
     <header>
         <a href="../index.html"><img class="logo" src="../images/logo.png"></a>
-        <div>
             <li class="contact">contact</li>
-        <ul class="contactList">
+            <ul class="contactList">
             <li >558 97 98 78 john</li>
             <li>590 09 90 76 james</li>
             <li>541 24 52 66 jessie</li> 
         </ul>
-        </div>
+
         <ul>
             <li class="product"><a class="prod">product</a>  
                 <ul class="rightSlide">
@@ -26,23 +26,39 @@
                 </ul>
             </li>
         </ul>
+        <div class="burgercont">
+            <div class="burger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+            <ul class="burgerItems">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#shave">shaving accesories</a></li>
+                <li><a href="#mansCare">man's care</a></li>
+            </ul>
+        </div>
     </header>
+
     <main class="mainSection">
+
         <div id="shave" class="title"><h1>Shaving Accesories</h1></div>
         <div class="flexbox">
             <div class="shaving"></div>
         </div>
-        
+    
         <div id="mansCare" class="title"><h1>Man's Care</h1></div>
+        <div class="backgroundChanger2"></div>
         <div class="flexbox">
-             <div class="manscare"></div>
-        </div>
-       
-    </main >
-    <footer>
-        <p>thank's for the purchase! we hope you will visit us again!</p>
-    </footer>
+            <div class="manscare"></div>
+        </div>  
+
+    </main>
+
+<footer><p>thank's for the purchase! we hope you will visit us again!</p></footer>
+
 </body>
 <script src="../scripts/script.js"></script>
 <script src="../scripts/shop.js"></script>
+<script src="../scripts/burger.js"></script>
 </html>

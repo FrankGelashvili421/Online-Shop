@@ -3,50 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="./styles/burger.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/shop.css">
+    <link rel="stylesheet" href="styles/burger.css">
     <link rel="icon" href="images/icon.png">
     <title>frank's Chop Shop</title>
 </head>
 <body>
-    <div class="section1">
-        <div class="burgercont">
-            <div class="burger">
-              <div class="line line1"></div>
-              <div class="line line2"></div>
-              <div class="line line3"></div>
-            </div>
-            <ul class="burgerItems">
-                <li><a href="#shave">shaving accesories</a></li>
-                <li><a href="#mansCare">man's care</a></li>
-            </ul>
-        </div>
-        <aside class="leftSide">
-            <img class="logo" src="images/logo2.png">
-            <ul>
-                <li class="product"><a class="prod">product</a>  
-                    <ul class="rightSlide">
-                        <li><a href="./pages/index.html#shave">shaving accesories</a></li>
-                        <li><a href="./pages/index.html#mansCare">man's care</a></li>
-                    </ul>
-                </li>
-                <div class="contactBox">
-                    <li class="contact">contact</li>
-                <ul class="contactList">
-                    <li >558 97 98 78 john</li>
-                    <li>590 09 90 76 james</li>
-                    <li>541 24 52 66 jessie</li> 
-                </ul>
+    <main class="mainSection">
+        <section class="section1">
+            <div class="burgercont">
+                <div class="burger">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
                 </div>
+                <ul class="burgerItems">
+                    <li><a href="#shave">shaving accesories</a></li>
+                    <li><a href="#mansCare">man's care</a></li>
+                </ul>    
+            </div>
+            <aside class="leftSide">
+                <img class="logo" src="images/logo2.png">
+                <ul>
+                    <li class="product"><a class="prod">product</a>  
+                        <ul class="rightSlide">
+                            <li><a href="#shave">shaving accesories</a></li>
+                            <li><a href="#mansCare">man's care</a></li>
+                        </ul>
+                    </li>
+                    <div class="contactBox">
+                        <li class="contact">contact</li>
+                    <ul class="contactList">
+                        <li >558 97 98 78 john</li>
+                        <li>590 09 90 76 james</li>
+                        <li>541 24 52 66 jessie</li> 
+                    </ul>
+                    </div>
+                </ul>
+            </aside>
+            <div class="rightSide">
+                <img class="background" src="images/background.webp">
+                <img class="logo2" src="images/logo.png">
+                <h1 class="Logo2L">Real mans Real Product</h1>
+            </div>
+        </section>
+        <section class="section">
+            <div id="abtus" class="title"><h1>About us</h1></div>
+
+             <h1>THIS SECTION IS UNDER DEVELOPMENT! STAY TUNED</h1>
+
+        </section>
+        <section class="section2">
+
+            <select name="allItems" id="selector">
+                <option value="" selected disabled>all</option>
+                <option value="shaving">shaving accesories</option>
+                <option value="manscare">man's Care</option>
+            </select>
+
+            <div id="shave" class="title"><h1>Shaving Accesories</h1></div>
+
+            <div class="flexbox">
+                <div class="shaving"></div>
+            </div>
+
+            <div id="mansCare" class="title"><h1>Man's Care</h1></div>
+            <div class="flexbox">
+                <div class="manscare"></div>
+            </div>  
+        </section>
+        
+    </main>
+
+    <footer>
+        <img class="image" src="./images/logo.png">
+            <ul class="links">
+                <li><a href="#">More About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
             </ul>
-        </aside>
-        <div class="rightSide">
-            <img class="background" src="images/background.webp">
-            <img class="logo2" src="images/logo.png">
-            <h1 class="Logo2L">Real mans Real Product</h1>
-        </div>
-    </div>
+    </footer>
+
 </body>
-<script src="./scripts/burger.js"></script>
-<script src="scripts/script.js"></script>
+<script src="scripts/burger.js"></script>
+<script src="scripts/shop.js"></script>
+<script src="scripts/dropdown.js"></script>
 </html>

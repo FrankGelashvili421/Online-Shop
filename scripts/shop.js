@@ -1,69 +1,68 @@
-
 let shavingItems = [{
     item:'Shave Brush',
     new:true,
     price: '15$',
-    image: '../images/shave brush.webp',
+    image: './images/shave brush.webp',
 },
 {
     item:'Shave Blade',
     new:true,
     price: '36$',
-    image: '../images/shave blade.webp',
+    image: './images/shave blade.webp',
 },
 {
     item:'Electric Razor "Panasonic Arc5 LV9 "', 
     new:true,
     price: '250$',
-    image: '../images/electric razor.jpg',
+    image: './images/electric razor.jpg',
 },
 {
     item:'Shave Razor',
     new:true,
     price: '5$',
-    image: '../images/razor.webp'
+    image: './images/razor.webp'
 },
 ];
 
 let MansCare = [{
     item:'facewash',
     price:'15$',
-    image: '../images/facewash.webp',
+    image: './images/facewash.webp',
 },
 {
     item:'hairbalm',
     price:'45$',
-    image: ' ../images/blumaan hair balm.webp',
+    image: './images/blumaan hair balm.webp',
 },
 {
     item:'shampoo',
     price:'15$',
-    image: '../images/shampoo.webp'
+    image: './images/shampoo.webp'
 },
 {
     item:'Beardbalm',
     price:'20$',
-    image: '../images/beard balm.webp',
+    image: './images/beard balm.webp',
 },
 {
     item:'shavegel',
     price:'15$',
-    image: '../images/shave gel.jpg'
+    image: './images/shave gel.jpg'
 },
 {
     item:'shave cream',
     price:'24$',
-    image:'../images/shave cream.webp'
+    image:'./images/shave cream.webp'
 },
 {
     item:'shave foam',
     price:'10$',
-    image:'../images/shave foam.jpg'
+    image:'./images/shave foam.jpg'
 },
 {
     item:'hair wax',
     price:'35$',
-    image: '../images/hair wax.jpg'
+    image: './images/hair wax.jpg'
 },
 ];
 

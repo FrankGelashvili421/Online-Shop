@@ -9,6 +9,9 @@
     padding: 0;
     text-decoration: none;
 }
+body{
+    background-color: #181616;
+}
 .burgercont{
     padding: 24px;
     margin: 20px;
@@ -140,6 +143,36 @@
 .rightSide{
     grid-area: main;
 }
+select{
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.447);
+}
+select{    
+    padding: 5px 40px;
+    font-size: 16px;
+    font-weight: 300;
+}
+select:focus{
+    outline-width: 0;
+    border: 1px solid rgba(0, 0, 0, 0.447);
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 70px;
+    background-color: rgb(31, 23, 23);
+    color: aquamarine;
+    font-size: 22px;
+    font-family: "Kanit", sans-serif;
+}
+.image{
+    max-width: 200px;
+}
+.links{
+    display: flex;
+    gap: 30px;
+}
 @media only screen and (max-width: 1300px){
 .rightSlide{
     font-size: 35px;
@@ -163,30 +196,11 @@
     top: 60%;
 }
 }
-
-@media only screen and (max-width: 1040px){
-    .logo2, .logo2L{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+.section{
+    font-size: xx-large;
+    font-weight: bolder;
+    background-color: wheat;
 }
-@media only screen and (max-width: 780px){
-    .leftSide{
-        display: none;
-    }
-.section1{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows:auto;
-    grid-template-areas: 
-    " main";
-}
-.background{
-    z-index: -1;
-    object-fit: cover;
-    position: fixed;
-    height: 100vh;
-}
+.section2 , footer{
+    visibility: hidden;
 }

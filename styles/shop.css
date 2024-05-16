@@ -7,27 +7,6 @@
     text-decoration: none;
     list-style: none;
 }
-.background2{
-    z-index: -1;
-    position: fixed;
-    object-fit: cover;
-    height: 100vh;
-    width: 100vw;
-    filter: blur(3px) brightness(70%);
-}
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 70px;
-}
-.logo{
-    max-width: 220px;
-}
-.prod{
-    font-size: 34px;
-    cursor: pointer;
-}
 .title{
     padding: 10px 30px;
     display: flex;
@@ -37,60 +16,10 @@ header{
     background-color: black;
     color: aquamarine;
 }
-#shave, #mansCare{
+#shave, #mansCare, #abtus{
     position: sticky;
     top: 0;
     box-shadow: 1px 9px 21px -8px rgba(0,0,0,0.76);
-}
-#mansCare{
-    z-index: 1;
-}
-.rightSlide{
-    z-index: 1;
-    display: flex;
-    background-color: rgb(31, 30, 30);
-    flex-direction: column;
-    position: absolute;
-    overflow: hidden;
-    height: 0px;
-    transition: all ease-out .4s;
-}
-.rightSlide li{
-    padding: 10px 20px;
-    transition: all .4s;
-    border: 1px solid rgb(8, 8, 8);
-}
-.rightSlide a{
-    color: aquamarine;
-    transition: all .4s;
-}
-.rightSlide a:hover{
-    color: rgb(16, 136, 96);
-}
-.contact{
-    cursor: pointer;
-    font-size: 34px
-}
-.contactList{
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    background-color: rgb(31, 30, 30);
-    overflow: hidden;
-    height: 0px;
-    transition: all ease-out .4s;
-}
-.contactList li{
-    padding: 10px 20px;
-    transition: all 4s;
-    color: aquamarine;
-    border: 1px solid rgba(8, 8, 8, 0.616);
-}
-header{
-    background-color: rgb(31, 23, 23);
-    color: aquamarine;
-    font-family: "Kanit", sans-serif;
 }
 .shaving , .manscare{
     margin: 200px;
@@ -144,43 +73,4 @@ header{
     border: none;
     font-size: 20px;
     cursor: pointer;
-}
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 70px;
-    background-color: rgb(31, 23, 23);
-    color: aquamarine;
-    font-size: 22px;
-    font-family: "Kanit", sans-serif;
-}
-
-@media only screen and (max-width: 780px){
-   header .contact , .product{
-    display: none;
-   }
-   .logo{
-    max-width: 200px;
-   }
-   header{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-   }
-
-.shaving , .manscare{
-    margin: 50px;
-    padding-bottom: 120px;
-    gap: 200px;
-    grid-template-columns:1fr
-}
-.images{
-    height: 398px;
-    width: 268px;
-}
-footer{
-    padding: 18px 38px;
-    font-size: 11px;
-}
 }

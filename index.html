@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/shop.css">
+    <!-- <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/shop.css"> -->
     <link rel="stylesheet" href="styles/burger.css">
-    <link rel="stylesheet" href="styles/memberlist.css">
+    <!-- <link rel="stylesheet" href="styles/memberlist.css"> -->
     <link rel="icon" href="images/icon.png">
     <title>frank's Chop Shop</title>
 </head>
 <body>
     <main class="mainSection">
         <section class="section1">
-            <div class="burgercont">
+            <ul class="burgerItems">
+                <li><a href="#">shaving accesories</a></li>
+                <li><a href="#">man's care</a></li>
+            </ul> 
+            <nav>
                 <div class="burger">
-                  <div class="line line1"></div>
-                  <div class="line line2"></div>
-                  <div class="line line3"></div>
-                </div>
-                <ul class="burgerItems">
-                    <li><a href="#">shaving accesories</a></li>
-                    <li><a href="#">man's care</a></li>
-                </ul>    
-            </div>
-            <aside class="leftSide">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </div>   
+            </nav>
+            <!-- <aside class="leftSide">
                 <img class="logo" src="images/logo2.png">
                 <ul>
                     <li class="product"><a class="prod">product</a>  
@@ -68,15 +68,18 @@
 
         </section>
         <section id="product" class="section2">
-            <h1>Check Our Products there</h1>
-            <select name="allItems" id="selector">
-                <option value="" selected disabled>all</option>
-                <option value="shaving">shaving accesories</option>
-                <option value="manscare">man's Care</option>
-            </select>
-
+            <h1 class="title">Check Our Products here</h1>
+            <div>
+                <select name="allItems" id="selector">
+                    <option class="all" >all</option>
+                    <option class="ShavingAccesories">shaving accesories</option>
+                    <option class="MansCare">man's Care</option>
+                </select>
+            </div>
+           <div class="flexContainer">
+            <div class="cards"></div>
+           </div>
         </section>
-        
     </main>
 
     <footer>
@@ -86,11 +89,11 @@
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms of Service</a></li>
             </ul>
-    </footer>
+    </footer> -->
 
 </body>
 <script src="scripts/burger.js"></script>
-<script src="scripts/dropdown.js"></script>
+<!-- <script src="scripts/dropdown.js"></script>
 <script src="scripts/memberboard.js"></script>
-<!-- <script src="scripts/shop.js"></script> -->
+<script src="scripts/shop.js"></script> -->
 </html>

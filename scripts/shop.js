@@ -1,4 +1,4 @@
-let shavingItems = [{
+const shavingItems = [{
     item:'Shave Brush',
     new:true,
     price: '15$',
@@ -24,7 +24,7 @@ let shavingItems = [{
 },
 ];
 
-let MansCare = [{
+const MansCare = [{
     item:'facewash',
     price:'15$',
     image: './images/facewash.webp',
@@ -66,50 +66,56 @@ let MansCare = [{
 },
 ];
 
-let card = (shaveitem) => {
-    let shavingcard = document.querySelector('.shaving');
+const selector = document.getElementById('#selector');
+const all = document.querySelector('.all');
+const shavingaccesories = document.querySelector('.ShavingAccesories');
+const manscare = document.querySelector('.MansCare');
+
+
+const card = (shaveitem) => {
+    const shavingSide = document.querySelector('.cards');
 
     shaveitem.forEach(element => {
-        let cardContainer = document.createElement('div');
+        const cardContainer = document.createElement('div');
         cardContainer.className = 'cardCont';
         cardContainer.innerHTML = `
             <div class="container">
                 <img class="images" src="${element.image}">
                 <div class="items">
+                 <div class="item">${element.item}</div>
                     <div class="btnCont">
-                        <div class="items">${element.item}</div>
-                        <div class="prices">${element.price}</div>
+                        <div class="price">${element.price}</div>
                         <button class="buybtn">buy</button>
                     </div>
                 </div>
             </div>
         `;
-        shavingcard.appendChild(cardContainer);
+        shavingSide.appendChild(cardContainer);
     });
 };
 
 
 card(shavingItems);
 
-let cards = (MansCare) =>{
-    let mensCareCard = document.querySelector('.manscare');
+const cards = (MansCare) =>{
+    const MansCareSide = document.querySelector('.cards');
 
     MansCare.forEach(element =>{
-      let cardcont = document.createElement('div');
-      cardcont.className = 'carecont';
+      const cardcont = document.createElement('div');
+      cardcont.className = 'cardcont';
       cardcont.innerHTML = `
         <div class="container">
             <img class="images" src="${element.image}">
             <div class="items">
+             <div class="item">${element.item}</div>
                 <div class="btnCont">
-                    <div class="items">${element.item}</div>
-                    <div class="prices">${element.price}</div>
+                    <div class="price">${element.price}</div>
                     <button class="buybtn">buy</button>
                 </div>
             </div>
         </div>
       `;
-      mensCareCard.appendChild(cardcont);
+      MansCareSide.appendChild(cardcont);
     });
 };
 

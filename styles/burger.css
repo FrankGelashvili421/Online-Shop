@@ -1,44 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-.burgercont{
-    display: none;
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
 .burger{
-    height: 18px;
-    width: 33px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+    height: 50px;
+    width: 50px;
+    position: relative;
     cursor: pointer;
+    z-index: 99;
+    left: 2%;
 }
-.line{
+.burger .line{
+    height: 5px;
     width: 100%;
-    height: 2px;
-    background-color: rgb(255, 255, 255);
-} 
-.burgerItems{
-    font-family: "Kanit", sans-serif;
-    z-index: 1;
-    display: flex;
-    background-color: rgb(31 23 23);
-    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px;
     position: absolute;
-    overflow: hidden;
-    height: 0px;
-    transition: all ease-out .4s;
-    font-size: 20px;
-    border-radius: 10px;
-    & li{
-        padding: 10px 20px;
-        transition: all .4s;
-        border: 1px solid rgb(8, 8, 8);
-        border-radius: 10px;
-    }
-    & a{
-        color: rgb(255, 255, 255);
-        transition: all .4s;
-    }
-} 
+    top: 50%;
+}
+.burger .line:nth-child(1){
+    top:25%;
+}
+.burger .line:nth-child(3){
+    top: 75%;
+}
+.burger.acive .line:nth-child(1){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.burger.active .line:nth-child(2){
+    opacity: 0;
+}
+.burger.acive .line:nth-child(3){
+    top:50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.burgerItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    position: fixed;
+    height: 100vh;
+    max-width: 500px;
+    width: 100%;
+    z-index: 98;
+    top: 0;
+    left: -500px;
+
+    font-size: 3rem;
+    font-family: "Kanit", sans-serif;
+    background-color: rgb(31 23 23);
+
+    transition: 3s ease;
+} 
+.burgerItems.active{
+    left: 0;
+}
 @media only screen and (max-width:768px) {
     .burgercont{
         position:absolute;

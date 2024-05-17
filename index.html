@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/shop.css">
     <link rel="stylesheet" href="styles/burger.css">
+    <link rel="stylesheet" href="styles/memberlist.css">
     <link rel="icon" href="images/icon.png">
     <title>frank's Chop Shop</title>
 </head>
@@ -19,8 +20,8 @@
                   <div class="line line3"></div>
                 </div>
                 <ul class="burgerItems">
-                    <li><a href="#shave">shaving accesories</a></li>
-                    <li><a href="#mansCare">man's care</a></li>
+                    <li><a href="#">shaving accesories</a></li>
+                    <li><a href="#">man's care</a></li>
                 </ul>    
             </div>
             <aside class="leftSide">
@@ -28,8 +29,8 @@
                 <ul>
                     <li class="product"><a class="prod">product</a>  
                         <ul class="rightSlide">
-                            <li><a href="#shave">shaving accesories</a></li>
-                            <li><a href="#mansCare">man's care</a></li>
+                            <li><a href="#">shaving accesories</a></li>
+                            <li><a href="#">man's care</a></li>
                         </ul>
                     </li>
                     <div class="contactBox">
@@ -43,35 +44,37 @@
                 </ul>
             </aside>
             <div class="rightSide">
-                <img class="background" src="images/background.webp">
                 <img class="logo2" src="images/logo.png">
                 <h1 class="Logo2L">Real mans Real Product</h1>
             </div>
         </section>
-        <section class="section">
-            <div id="abtus" class="title"><h1>About us</h1></div>
-
-             <h1>THIS SECTION IS UNDER DEVELOPMENT! STAY TUNED</h1>
+        <section>
+            <div class="offerContainer">
+                <h1>what's offer?</h1>
+                <p>best quality products</p>
+                <p>affordable prices</p>
+                <p>question mark?</p>
+                <p>don't believe me?</p>
+                <p>check out with yourself</p>
+                <button class="offerBtn"><a href="#product">HERE</a></button>
+            </div>
+        </section>
+        <section>   
+            <div class="membersContainer">
+                <h1 class="MembersTitle">Our Member Board</h1>
+                <div class="members">
+                </div>
+            </div>
 
         </section>
-        <section class="section2">
-
+        <section id="product" class="section2">
+            <h1>Check Our Products there</h1>
             <select name="allItems" id="selector">
                 <option value="" selected disabled>all</option>
                 <option value="shaving">shaving accesories</option>
                 <option value="manscare">man's Care</option>
             </select>
 
-            <div id="shave" class="title"><h1>Shaving Accesories</h1></div>
-
-            <div class="flexbox">
-                <div class="shaving"></div>
-            </div>
-
-            <div id="mansCare" class="title"><h1>Man's Care</h1></div>
-            <div class="flexbox">
-                <div class="manscare"></div>
-            </div>  
         </section>
         
     </main>
@@ -87,6 +90,7 @@
 
 </body>
 <script src="scripts/burger.js"></script>
-<script src="scripts/shop.js"></script>
 <script src="scripts/dropdown.js"></script>
+<script src="scripts/memberboard.js"></script>
+<!-- <script src="scripts/shop.js"></script> -->
 </html>

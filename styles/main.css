@@ -13,6 +13,7 @@
     text-decoration: none;
 
     scroll-behavior: smooth;
+    transition: all 1s;
 }
 a{
     color: inherit;
@@ -20,7 +21,7 @@ a{
 body{
     background-color: #181616;
 }
-.section1{
+.sec1{
     height: 100vh;
 }
 .rightSide h1{
@@ -55,7 +56,7 @@ body{
 .rightSlide a:hover{
     color: rgb(2, 73, 73);
 }
-.section1{
+.sec1{
     display: grid;
     grid-template-columns: 2fr 4fr;
     grid-template-rows:auto;
@@ -150,7 +151,7 @@ body{
     /* filter:blur(3px) brightness(70%); problems after problems bruh */
 
     gap: 200px;
-    width: 80vw;
+    width: 77.5vw;
     height: 100vh;
     grid-area: main;
 }
@@ -186,6 +187,22 @@ body{
     padding: 20px 0px;
     width: fit-content;
 }
+.offerBtn::after{
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+
+    transition: all 2s;
+    
+}
+.offerBtn:hover::after{
+    width: 100%;
+}
+
 .offerBtn a{
     padding: 0px 40px;
 }
@@ -241,6 +258,9 @@ footer{
     gap: 30px;
 }
 @media only screen and (max-width: 1300px){
+    .rightside{
+        width: 74vw;
+    }
     .rightSlide{
         font-size: 35px;
     }
@@ -250,23 +270,59 @@ footer{
     }
 }
 @media only screen  and (max-width: 1040px){
- .rightSide{
-    width: 70vw;
- }
+    .logo2{
+        width: 60%;
+    }
+    .Logo2L{
+        font-size: 40px;
+    }
+    .product, .contact{
+        font-size: 38px;
+    }
+    .logo{
+        min-width: 200px;
+    }
+    .rightSide{
+        width: 70vw;
+    }
 }
-
 @media only screen and (max-width:768px) {
+    .offerContainer{
+        font-size: 35px;
+    }
+    .offerBtn {
+        font-size: large;
+        font-weight: bold;
+        letter-spacing: 0.2em;
+        padding: 14px 0px;
+    }
+    .offerBtn a {
+        padding: 0px 29px;
+    }
+    .Logo2L{
+        font-size: 36px;
+    }
     .leftSide{
         display: none;
     }
     .rightSide{
-        width: 100vw;
+        width: 100%;
     }
-    .section1{
+    .sec1{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows:auto;
         grid-template-areas: 
         " main";
+    }
+    .image {
+        max-width: 80px;
+    }
+    .links {
+        gap: 22px;
+    }
+    footer{
+        padding: 12px 5px;
+        font-size: 16px;
     }
 }

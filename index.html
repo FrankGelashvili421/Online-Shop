@@ -12,25 +12,25 @@
 </head>
 <body>
     <main class="mainSection">
-        <section class="section1">
+        <section class="section sec1">
             <ul class="burgerItems">
-                <li><a href="#">shaving accesories</a></li>
-                <li><a href="#">man's care</a></li>
+                <li><a href="#member">members</a></li>
+                <li><a href="#product">product</a></li>
             </ul> 
             <nav>
                 <div class="burger">
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
+                  <div class="line1"></div>
+                  <div class="line2"></div>
+                  <div class="line3"></div>
                 </div>   
             </nav>
             <aside class="leftSide">
                 <img class="logo" src="images/logo2.png">
                 <ul>
-                    <li class="product"><a class="prod">product</a>  
+                    <li class="product"><a class="prod">navigation</a>  
                         <ul class="rightSlide">
-                            <li><a href="#">shaving accesories</a></li>
-                            <li><a href="#">man's care</a></li>
+                            <li><a href="#member">members</a></li>
+                            <li><a href="#product">product</a></li>
                         </ul>
                     </li>
                     <div class="contactBox">
@@ -48,7 +48,7 @@
                 <h1 class="Logo2L">Real mans Real Product</h1>
             </div>
         </section>
-        <section>
+        <section  class="section" id="mains">
             <div class="offerContainer">
                 <h1>what's offer?</h1>
                 <p>best quality products</p>
@@ -59,15 +59,18 @@
                 <button class="offerBtn"><a href="#product">HERE</a></button>
             </div>
         </section>
-        <section>   
+        <section class="section" id="member">   
             <div class="membersContainer">
-                <h1 class="MembersTitle">Our Member Board</h1>
+                   <div class="TitleFlexContainer">
+                        <h1 class="MembersTitle">Our Member Board</h1>
+                        <input placeholder="search name here" type="text" class="inputFilter" >
+                   </div>
                 <div class="members">
                 </div>
             </div>
 
         </section>
-        <section id="product" class="section2">
+        <section id="product" class="section">
             <h1 class="title">Check Our Products here</h1>
             <div>
                 <select name="allItems" id="selector">

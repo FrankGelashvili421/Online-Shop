@@ -71,7 +71,6 @@ const all = document.querySelector('.all');
 const shavingaccesories = document.querySelector('.ShavingAccesories');
 const manscare = document.querySelector('.MansCare');
 
-
 const card = (shaveitem) => {
     const shavingSide = document.querySelector('.cards');
 
@@ -120,3 +119,9 @@ const cards = (MansCare) =>{
 };
 
 cards(MansCare);
+
+// const selector = document.getElementById('#selector');
+// const all = document.querySelector('.all');
+// const shavingaccesories = document.querySelector('.ShavingAccesories');
+// const manscare = document.querySelector('.MansCare');
+

@@ -79,4 +79,8 @@
     .burger{
     display: block;
     }
+    .burgerItems{
+        max-width: none;
+        left: -800px;
+    }
 }

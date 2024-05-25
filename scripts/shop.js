@@ -66,15 +66,12 @@ const MansCare = [{
 },
 ];
 
-const selector = document.getElementById('#selector');
-const all = document.querySelector('.all');
-const shavingaccesories = document.querySelector('.ShavingAccesories');
-const manscare = document.querySelector('.MansCare');
+let chosenData;
 
-const card = (shaveitem) => {
+const card = (shaveItems) => {
     const shavingSide = document.querySelector('.cards');
-
-    shaveitem.forEach(element => {
+    shavingSide.innerHTML = '';
+    shaveItems.forEach(element => {
         const cardContainer = document.createElement('div');
         cardContainer.className = 'cardCont';
         cardContainer.innerHTML = `
@@ -92,36 +89,19 @@ const card = (shaveitem) => {
         shavingSide.appendChild(cardContainer);
     });
 };
+chosenData = shavingItems.concat(MansCare)
+card(chosenData);
 
-
-card(shavingItems);
-
-const cards = (MansCare) =>{
-    const MansCareSide = document.querySelector('.cards');
-
-    MansCare.forEach(element =>{
-      const cardcont = document.createElement('div');
-      cardcont.className = 'cardcont';
-      cardcont.innerHTML = `
-        <div class="container">
-            <img class="images" src="${element.image}">
-            <div class="items">
-             <div class="item">${element.item}</div>
-                <div class="btnCont">
-                    <div class="price">${element.price}</div>
-                    <button class="buybtn">buy</button>
-                </div>
-            </div>
-        </div>
-      `;
-      MansCareSide.appendChild(cardcont);
-    });
-};
-
-cards(MansCare);
-
-// const selector = document.getElementById('#selector');
-// const all = document.querySelector('.all');
-// const shavingaccesories = document.querySelector('.ShavingAccesories');
-// const manscare = document.querySelector('.MansCare');
-
+document.getElementById('selector').addEventListener('change', function(){
+    chosenData = [];
+    let selected = this.value;
+    if(selected === 'ShavingAccesories'){
+        chosenData = shavingItems;
+    }else if (selected === 'MansCare'){
+        chosenData = MansCare;
+    }else{
+        let allData = shavingItems.concat(MansCare);
+        chosenData = allData;
+    }
+    card(chosenData);
+});
